@@ -256,11 +256,6 @@ export default function InvoicePreview({ invoice }: { invoice: Invoice }) {
               <li>For any queries, please contact us.</li>
             </ol>
           </div>
-          <div className="signature">
-            <span>Developer Station 25</span>
-            <div className="signature-rule" />
-            <small>Authorized Signature</small>
-          </div>
         </section>
 
         <footer className="invoice-footer">
