@@ -118,7 +118,7 @@ export default function InvoiceFormPage() {
     <main className="workspace-page">
       <header className="workspace-header">
         <Link aria-label="Developer Station 25 home" className="workspace-brand" to="/">
-          <BrandLogo className="workspace-brand-logo" includeTagline={false} />
+          <BrandLogo className="workspace-brand-logo" />
         </Link>
         <Link className="text-back-link" to="/">← Home</Link>
       </header>

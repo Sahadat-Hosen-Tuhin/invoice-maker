@@ -55,14 +55,10 @@
 }
 
 .home-brand .brand-mark {
-  top: -183px;
-  left: -78px;
-  width: 458px;
-  height: 458px;
-}
-
-.home-brand .brand-tagline {
-  font-size: 13px;
+  top: -177px;
+  left: -76px;
+  width: 444px;
+  height: 444px;
 }
 
 .home-card h1 {
@@ -177,10 +173,6 @@
   left: -44px;
   width: 259px;
   height: 259px;
-}
-
-.workspace-brand-logo .brand-tagline {
-  display: none;
 }
 
 .text-back-link {

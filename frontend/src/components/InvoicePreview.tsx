@@ -8,14 +8,12 @@ import '../App.css'
 function Icon({
   name,
 }: {
-  name: 'building' | 'mail' | 'phone' | 'bank' | 'wallet' | 'globe' | 'check' | 'clock'
+  name: 'building' | 'mail' | 'phone' | 'globe' | 'check' | 'clock'
 }) {
   const paths = {
     building: <path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1" />,
     mail: <path d="M3 5h18v14H3zM3 6l9 7 9-7" />,
     phone: <path d="M7 3h4l2 5-3 2a15 15 0 0 0 4 4l2-3 5 2v4c0 1.1-.9 2-2 2C10 19 5 14 5 5c0-1.1.9-2 2-2Z" />,
-    bank: <path d="m3 9 9-6 9 6v2H3V9Zm2 3h3v7H5v-7Zm6 0h3v7h-3v-7Zm6 0h3v7h-3v-7ZM3 21h18" />,
-    wallet: <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4H20v16H5a2 2 0 0 1-2-2V6.5ZM3 8h17m-4 5h4m-4 0a2 2 0 1 0 4 0" />,
     globe: <><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a15 15 0 0 1 0 18m0-18a15 15 0 0 0 0 18" /></>,
     check: <path d="m5 12 4 4L19 6" />,
     clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></>,
@@ -210,7 +208,12 @@ export default function InvoicePreview({ invoice }: { invoice: Invoice }) {
             <h2>Payment Information</h2>
             <div className="payment-card">
               <div className="payment-entry">
-                <Icon name="bank" />
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  className="payment-entry-image"
+                  src="/bank.png"
+                />
                 <p>
                   <strong>{invoice.payment.accountType}</strong><br />
                   <b>Account Name:</b> {invoice.payment.accountName}<br />
@@ -220,7 +223,12 @@ export default function InvoicePreview({ invoice }: { invoice: Invoice }) {
               </div>
               <div className="payment-divider" />
               <div className="payment-entry">
-                <Icon name="wallet" />
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  className="payment-entry-image"
+                  src="/wallet-filled-money-tool.png"
+                />
                 <p>
                   <b>Transaction ID:</b> {invoice.payment.transactionId}<br />
                   <b>Payment Method:</b> {invoice.payment.method}<br />

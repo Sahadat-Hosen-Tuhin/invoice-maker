@@ -1,12 +1,8 @@
 interface BrandLogoProps {
   className?: string
-  includeTagline?: boolean
 }
 
-export default function BrandLogo({
-  className = '',
-  includeTagline = true,
-}: BrandLogoProps) {
+export default function BrandLogo({ className = '' }: BrandLogoProps) {
   return (
     <div className={`brand-lockup ${className}`}>
       <div className="brand-logo-crop">
@@ -16,7 +12,6 @@ export default function BrandLogo({
           alt="Developer Station 25 logo"
         />
       </div>
-      {includeTagline && <span className="brand-tagline">Build · Innovate · Grow</span>}
     </div>
   )
 }
